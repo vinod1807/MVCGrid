@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{927F6395-9668-4806-9B17-061021C3C8EA}</ProjectGuid>
+    <ProjectTypeGuids>{603c0e0b-db56-11dc-be95-000d561079b0};{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MVCJQueryGrid</RootNamespace>
+    <AssemblyName>MVCJQueryGrid</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MVCJQueryGrid.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MVCJQueryGrid.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\JQGridMVCDemo\JQGridMVCDemo\MvcApplication1\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Mvc" />
+    <Import Include="System.Web.Mvc.Ajax" />
+    <Import Include="System.Web.Mvc.Html" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\JsonHelper.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controllers\HomeController.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Scripts\themes\steel\images\._sprite5.psd" />
+    <None Include="Scripts\themes\steel\images\sprite5.psd" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\northwind.mdf">
+    </Content>
+    <Content Include="App_Data\northwind_log.ldf">
+      <DependentUpon>northwind.mdf</DependentUpon>
+    </Content>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery.jqGrid.js" />
+    <Content Include="Scripts\jquery.metadata.min.js" />
+    <Content Include="Scripts\js\grid.base.js" />
+    <Content Include="Scripts\js\grid.celledit.js" />
+    <Content Include="Scripts\js\grid.common.js" />
+    <Content Include="Scripts\js\grid.custom.js" />
+    <Content Include="Scripts\js\grid.formedit.js" />
+    <Content Include="Scripts\js\grid.import.js" />
+    <Content Include="Scripts\js\grid.inlinedit.js" />
+    <Content Include="Scripts\js\grid.locale-bg.js" />
+    <Content Include="Scripts\js\grid.locale-de.js" />
+    <Content Include="Scripts\js\grid.locale-dk.js" />
+    <Content Include="Scripts\js\grid.locale-el.js" />
+    <Content Include="Scripts\js\grid.locale-en.js" />
+    <Content Include="Scripts\js\grid.locale-fa.js" />
+    <Content Include="Scripts\js\grid.locale-fi.js" />
+    <Content Include="Scripts\js\grid.locale-fr.js" />
+    <Content Include="Scripts\js\grid.locale-is.js" />
+    <Content Include="Scripts\js\grid.locale-it.js" />
+    <Content Include="Scripts\js\grid.locale-pl.js" />
+    <Content Include="Scripts\js\grid.locale-pt-br.js" />
+    <Content Include="Scripts\js\grid.locale-pt.js" />
+    <Content Include="Scripts\js\grid.locale-ru.js" />
+    <Content Include="Scripts\js\grid.locale-sp.js" />
+    <Content Include="Scripts\js\grid.locale-tr.js" />
+    <Content Include="Scripts\js\grid.postext.js" />
+    <Content Include="Scripts\js\grid.setcolumns.js" />
+    <Content Include="Scripts\js\grid.subgrid.js" />
+    <Content Include="Scripts\js\grid.tbltogrid.js" />
+    <Content Include="Scripts\js\grid.treegrid.js" />
+    <Content Include="Scripts\js\jqDnR.js" />
+    <Content Include="Scripts\js\jqModal.js" />
+    <Content Include="Scripts\js\jquery.fmatter.js" />
+    <Content Include="Scripts\js\jquery.tablednd.js" />
+    <Content Include="Scripts\js\json2.js" />
+    <Content Include="Scripts\js\JsonXml.js" />
+    <Content Include="Scripts\js\min\grid.base-min.js" />
+    <Content Include="Scripts\js\min\grid.celledit-min.js" />
+    <Content Include="Scripts\js\min\grid.common-min.js" />
+    <Content Include="Scripts\js\min\grid.custom-min.js" />
+    <Content Include="Scripts\js\min\grid.formedit-min.js" />
+    <Content Include="Scripts\js\min\grid.import-min.js" />
+    <Content Include="Scripts\js\min\grid.inlinedit-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-bg-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-de-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-dk-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-el-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-en-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-fa-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-fi-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-fr-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-is-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-it-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-pl-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-pt-br-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-pt-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-ru-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-sp-min.js" />
+    <Content Include="Scripts\js\min\grid.locale-tr-min.js" />
+    <Content Include="Scripts\js\min\grid.postext-min.js" />
+    <Content Include="Scripts\js\min\grid.setcolumns-min.js" />
+    <Content Include="Scripts\js\min\grid.subgrid-min.js" />
+    <Content Include="Scripts\js\min\grid.tbltogrid-min.js" />
+    <Content Include="Scripts\js\min\grid.treegrid-min.js" />
+    <Content Include="Scripts\js\min\jquery.fmatter-min.js" />
+    <Content Include="Scripts\js\min\json2-min.js" />
+    <Content Include="Scripts\js\min\JsonXml-min.js" />
+    <Content Include="Scripts\themes\jqModal.css" />
+    <Content Include="Scripts\themes\steel\grid.css" />
+    <Content Include="Scripts\themes\steel\images\._sprite5.png" />
+    <Content Include="Scripts\themes\steel\images\Arrow2 Down.png" />
+    <Content Include="Scripts\themes\steel\images\Arrow2 Up.png" />
+    <Content Include="Scripts\themes\steel\images\bg.gif" />
+    <Content Include="Scripts\themes\steel\images\cd_run.gif" />
+    <Content Include="Scripts\themes\steel\images\control_090.png" />
+    <Content Include="Scripts\themes\steel\images\control_270.png" />
+    <Content Include="Scripts\themes\steel\images\dirty.gif" />
+    <Content Include="Scripts\themes\steel\images\down.gif" />
+    <Content Include="Scripts\themes\steel\images\fhbg.gif" />
+    <Content Include="Scripts\themes\steel\images\find.gif" />
+    <Content Include="Scripts\themes\steel\images\find1.gif" />
+    <Content Include="Scripts\themes\steel\images\first.gif" />
+    <Content Include="Scripts\themes\steel\images\first.png" />
+    <Content Include="Scripts\themes\steel\images\folder.png" />
+    <Content Include="Scripts\themes\steel\images\headerleft1.gif" />
+    <Content Include="Scripts\themes\steel\images\headerright1.gif" />
+    <Content Include="Scripts\themes\steel\images\ico-close.gif" />
+    <Content Include="Scripts\themes\steel\images\last.gif" />
+    <Content Include="Scripts\themes\steel\images\last.png" />
+    <Content Include="Scripts\themes\steel\images\line3.gif" />
+    <Content Include="Scripts\themes\steel\images\loading.gif" />
+    <Content Include="Scripts\themes\steel\images\minus.gif" />
+    <Content Include="Scripts\themes\steel\images\next.gif" />
+    <Content Include="Scripts\themes\steel\images\next.png" />
+    <Content Include="Scripts\themes\steel\images\nochild.gif" />
+    <Content Include="Scripts\themes\steel\images\odown.gif" />
+    <Content Include="Scripts\themes\steel\images\off-first.gif" />
+    <Content Include="Scripts\themes\steel\images\off-last.gif" />
+    <Content Include="Scripts\themes\steel\images\off-next.gif" />
+    <Content Include="Scripts\themes\steel\images\off-prev.gif" />
+    <Content Include="Scripts\themes\steel\images\oup.gif" />
+    <Content Include="Scripts\themes\steel\images\plus.gif" />
+    <Content Include="Scripts\themes\steel\images\prev.gif" />
+    <Content Include="Scripts\themes\steel\images\prev.png" />
+    <Content Include="Scripts\themes\steel\images\refresh.gif" />
+    <Content Include="Scripts\themes\steel\images\refresh1.gif" />
+    <Content Include="Scripts\themes\steel\images\resize.gif" />
+    <Content Include="Scripts\themes\steel\images\row_add.gif" />
+    <Content Include="Scripts\themes\steel\images\row_add1.gif" />
+    <Content Include="Scripts\themes\steel\images\row_delete.gif" />
+    <Content Include="Scripts\themes\steel\images\row_delete1.gif" />
+    <Content Include="Scripts\themes\steel\images\row_edit.gif" />
+    <Content Include="Scripts\themes\steel\images\row_edit1.gif" />
+    <Content Include="Scripts\themes\steel\images\sort_asc.gif" />
+    <Content Include="Scripts\themes\steel\images\sort_desc.gif" />
+    <Content Include="Scripts\themes\steel\images\spacer.gif" />
+    <Content Include="Scripts\themes\steel\images\sprite.png" />
+    <Content Include="Scripts\themes\steel\images\sprite5.png" />
+    <Content Include="Scripts\themes\steel\images\tab_close-on.gif" />
+    <Content Include="Scripts\themes\steel\images\tree_leaf.gif" />
+    <Content Include="Scripts\themes\steel\images\tree_minus.gif" />
+    <Content Include="Scripts\themes\steel\images\tree_plus.gif" />
+    <Content Include="Scripts\themes\steel\images\up.gif" />
+    <Content Include="Scripts\themes\steel\images\wbg.gif" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.3.2.js" />
+    <Content Include="Scripts\jquery-1.3.2.min.js" />
+    <Content Include="Scripts\jquery-1.3.2-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.3.2.min-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4373</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

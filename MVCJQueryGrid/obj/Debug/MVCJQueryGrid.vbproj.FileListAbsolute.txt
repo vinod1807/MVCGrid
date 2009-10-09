@@ -1,0 +1,19 @@
+D:\_anitaa_workspace\StackIT\Upgrade StackIT\R&D\MVCJQueryGrid\MVCJQueryGrid\bin\MVCJQueryGrid.dll
+D:\_anitaa_workspace\StackIT\Upgrade StackIT\R&D\MVCJQueryGrid\MVCJQueryGrid\bin\MVCJQueryGrid.pdb
+D:\_anitaa_workspace\StackIT\Upgrade StackIT\R&D\MVCJQueryGrid\MVCJQueryGrid\bin\MVCJQueryGrid.xml
+D:\_anitaa_workspace\StackIT\Upgrade StackIT\R&D\MVCJQueryGrid\MVCJQueryGrid\obj\Debug\ResolveAssemblyReference.cache
+D:\_anitaa_workspace\StackIT\Upgrade StackIT\R&D\MVCJQueryGrid\MVCJQueryGrid\obj\Debug\MVCJQueryGrid.Resources.resources
+D:\_anitaa_workspace\StackIT\Upgrade StackIT\R&D\MVCJQueryGrid\MVCJQueryGrid\obj\Debug\MVCJQueryGrid.vbproj.GenerateResource.Cache
+D:\_anitaa_workspace\StackIT\Upgrade StackIT\R&D\MVCJQueryGrid\MVCJQueryGrid\obj\Debug\MVCJQueryGrid.dll
+D:\_anitaa_workspace\StackIT\Upgrade StackIT\R&D\MVCJQueryGrid\MVCJQueryGrid\obj\Debug\MVCJQueryGrid.xml
+D:\_anitaa_workspace\StackIT\Upgrade StackIT\R&D\MVCJQueryGrid\MVCJQueryGrid\obj\Debug\MVCJQueryGrid.pdb
+D:\_anitaa_workspace\StackIT\Upgrade StackIT\R&D\MVCJQueryGrid\MVCJQueryGrid\bin\Newtonsoft.Json.dll
+F:\MVCJQueryGrid\MVCJQueryGrid\bin\MVCJQueryGrid.dll
+F:\MVCJQueryGrid\MVCJQueryGrid\bin\MVCJQueryGrid.pdb
+F:\MVCJQueryGrid\MVCJQueryGrid\bin\MVCJQueryGrid.xml
+F:\MVCJQueryGrid\MVCJQueryGrid\obj\Debug\ResolveAssemblyReference.cache
+F:\MVCJQueryGrid\MVCJQueryGrid\obj\Debug\MVCJQueryGrid.Resources.resources
+F:\MVCJQueryGrid\MVCJQueryGrid\obj\Debug\MVCJQueryGrid.vbproj.GenerateResource.Cache
+F:\MVCJQueryGrid\MVCJQueryGrid\obj\Debug\MVCJQueryGrid.dll
+F:\MVCJQueryGrid\MVCJQueryGrid\obj\Debug\MVCJQueryGrid.xml
+F:\MVCJQueryGrid\MVCJQueryGrid\obj\Debug\MVCJQueryGrid.pdb
